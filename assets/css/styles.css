@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://i.pinimg.com/236x/fd/67/de/fd67de43ef782a7d2de29ca0576ee9c1.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    padding-top: 73px;
+}
+
+.grid h1, .page-game h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: white;
+}
+
+.page-game h2{
+    padding-top: 73px;
+}
+
+.grid::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid .col{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    background: #710193;
+    z-index: 3;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.menu ul li{
+    display: flex;
+}
+
+.menu ul a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+    transition: all 500ms ease-in-out;
+}
+
+.menu ul a:hover{
+    background: #311432;
+}
+
+.grid .col-content img{
+    display: block;
+    width: 100%;
+    height: 270px;
+    align-items: center;
+    opacity: 0.5;
+    transition: all 500ms ease-in-out;
+}
+
+.grid .col-content img:hover{
+    opacity: 1.0;
+}
+
+@media all and (max-width: 480px){
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 484px) and (max-width: 600px){
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 605px) and (max-width: 1200px){
+    .grid .col{
+        width: 33.33%;
+    }
+}
